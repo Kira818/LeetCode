@@ -1,2 +1,2 @@
 # LeetCode
-go语言踏平LeetCode
+Go语言踏平LeetCode
