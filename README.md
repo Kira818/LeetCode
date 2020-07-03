@@ -1,2 +1,2 @@
 # LeetCode
-Conquer leetcode with golang
+go语言踏平LeetCode
