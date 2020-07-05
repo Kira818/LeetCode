@@ -5,3 +5,16 @@
 
 package LeetCode
 
+func twoSum(nums []int, target int) []int {
+	numMap := make(map[int]int)
+
+	for id1, num := range nums {
+		if id2, ok := numMap[target-num]; ok {
+			return []int{id2, id1}
+		} else {
+			numMap[num] = id1
+		}
+	}
+
+	return nil
+}
