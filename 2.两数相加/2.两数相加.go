@@ -1,5 +1,5 @@
 // @Author:  limuye@sgepri.sgcc.com.cn
-// @Desc:    
+// @Desc:    链表 数学
 // @Version: V1.0.0
 // @Create:  2020/7/5 17:21
 
