@@ -1,5 +1,5 @@
 // @Author:  limuye@sgepri.sgcc.com.cn
-// @Desc:    二分查找
+// @Desc:    数组 二分查找
 // @Version: V1.0.0
 // @Create:  2020/7/5 22:07
 
@@ -24,13 +24,5 @@ func searchInsert(nums []int, target int) int {
 		}
 	}
 
-	if l == 0 {
-		return 0
-	}
-
-	if r == len(nums) {
-		return len(nums)
-	}
-
-	return r - 1
+	return l
 }
