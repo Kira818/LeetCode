@@ -8,8 +8,8 @@ package LeetCode
 var cMap = map[byte]byte{')': '(', ']': '[', '}': '{'}
 
 func isValid(s string) bool {
-	stack := make([]byte, 0)
 	b := []byte(s)
+	stack := make([]byte, 0)
 
 	for _, c := range b {
 		if c == '(' || c == '[' || c == '{' {
