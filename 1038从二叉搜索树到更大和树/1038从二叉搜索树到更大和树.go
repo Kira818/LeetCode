@@ -5,26 +5,25 @@
 
 package LeetCode
 
-var sum int
-
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
 }
 
-func midTravel(tn *TreeNode) {
+func midTraversal(tn *TreeNode, sum *int) {
 	if tn == nil {
 		return
 	}
 
-	midTravel(tn.Right)
-	tn.Val += sum
-	sum = tn.Val
-	midTravel(tn.Left)
+	midTraversal(tn.Right, sum)
+	tn.Val += *sum
+	*sum = tn.Val
+	midTraversal(tn.Left, sum)
 }
 
 func bstToGst(root *TreeNode) *TreeNode {
-	midTravel(root)
+	sum := 0
+	midTraversal(root, &sum)
 	return root
 }
